@@ -18,7 +18,7 @@ type State = {
    export const userSlice = createSlice({
     name: 'user',
     initialState,
-    reducers: {
+    reducers: {//redux uses immer, so we can mutate state
         authenticateAction: (state) => {
             state.loading = true;
         },
@@ -48,5 +48,5 @@ type State = {
     authorizeAction,
     authorizedAction,
    } = userSlice.actions;
-   
+
    export default userSlice.reducer;

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import AppRedux from './AppRedux';
+import App from './context-implementation/App';
+import AppRedux from './redux-implementation/AppRedux';
 
 
 const root = ReactDOM.createRoot(
@@ -14,7 +14,7 @@ root.render(
     <hr></hr>
     <hr></hr>
     <hr></hr>
-    <AppRedux/>
+    <AppRedux />
   </React.StrictMode>
 );
 
